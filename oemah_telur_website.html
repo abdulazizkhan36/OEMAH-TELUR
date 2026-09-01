@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oemah Telur — Telur Asin Premium</title>
+<meta name="description" content="Oemah Telur — telur asin premium, gurih, lembut dan siap dinikmati.">
+<style>
+:root{--cream:#fffaf0;--brown:#3d281d;--gold:#d69b35;--gold2:#f2c66d;--muted:#75675d;--white:#fff;--green:#208b55}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--cream);color:var(--brown);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,250,240,.92);backdrop-filter:blur(12px);border-bottom:1px solid #eadfce}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;font-size:1.35rem;letter-spacing:-.5px}.logo span{color:var(--gold)}
+.links{display:flex;gap:28px;font-size:.95rem;font-weight:600}.links a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:14px;padding:13px 20px;font-weight:800;cursor:pointer;transition:.2s}
+.btn-primary{background:var(--brown);color:#fff;box-shadow:0 8px 20px #3d281d22}.btn-primary:hover{transform:translateY(-2px)}
+.hero{padding:75px 0 55px}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.badge{display:inline-block;background:#f7e4bd;color:#8b5b16;padding:7px 13px;border-radius:99px;font-size:.82rem;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(2.8rem,6vw,5.2rem);line-height:.98;letter-spacing:-4px;margin-bottom:22px}
+h1 span{color:var(--gold)}
+.hero p{font-size:1.08rem;color:var(--muted);max-width:550px;margin-bottom:28px}
+.hero-img{min-height:430px;border-radius:36px;background:radial-gradient(circle at 50% 38%,#fff 0 18%,transparent 19%),linear-gradient(135deg,#efd39b,#c58b39);position:relative;overflow:hidden;box-shadow:0 24px 60px #76501c22}
+.egg{position:absolute;width:205px;height:270px;background:linear-gradient(135deg,#fff8dd,#e7d2a2);border-radius:50% 50% 47% 47%;left:50%;top:50%;transform:translate(-50%,-45%) rotate(5deg);box-shadow:inset -20px -20px 35px #bda36d55,18px 25px 35px #56371330}
+.yolk{position:absolute;width:88px;height:88px;background:#e9ad35;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);box-shadow:inset -8px -8px 12px #a96b1744}
+.egg:after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(115deg,#ffffff88,transparent 35%)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:45px}
+.feature{background:#fff;border:1px solid #eee1d0;border-radius:20px;padding:20px}.icon{font-size:1.5rem;margin-bottom:8px}.feature b{display:block}.feature small{color:var(--muted)}
+section{padding:75px 0}.section-head{text-align:center;margin-bottom:35px}.section-head h2{font-size:2.4rem;letter-spacing:-1.5px}.section-head p{color:var(--muted)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid #eee1d0;border-radius:24px;overflow:hidden;box-shadow:0 10px 35px #4e31120c}
+.pic{height:210px;background:linear-gradient(145deg,#f7dfad,#d6a450);display:flex;align-items:center;justify-content:center;position:relative}
+.mini-eggs{display:flex;gap:7px;transform:rotate(-8deg)}.mini{width:68px;height:88px;background:#fff4d6;border-radius:50%;box-shadow:inset -8px -8px 14px #b9924a44,5px 9px 13px #57371130}
+.cardbody{padding:21px}.cardbody h3{font-size:1.25rem}.desc{color:var(--muted);font-size:.9rem;margin:5px 0 16px}.price{font-size:1.25rem;font-weight:900;color:#a66c16}.order{width:100%;margin-top:15px;background:var(--green);color:#fff}
+.about{background:#3d281d;color:#fff}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about h2{font-size:2.5rem;line-height:1.1;margin-bottom:15px}.about p{color:#e8dccf}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.stat{background:#ffffff0d;border:1px solid #ffffff18;border-radius:20px;padding:25px}.stat strong{font-size:2rem;color:var(--gold2);display:block}
+.contact{background:#fff}.contactbox{background:#f6ead4;border-radius:28px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contactbox p{color:var(--muted)}
+footer{padding:30px 0;text-align:center;color:#8b7a6c;font-size:.9rem}
+@media(max-width:800px){.links{display:none}.hero{padding-top:45px}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-img{min-height:350px}.features,.products{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.contactbox{flex-direction:column;align-items:flex-start}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<nav><div class="container navin">
+  <a class="logo" href="#">OEMAH <span>TELUR</span></a>
+  <div class="links"><a href="#produk">Produk</a><a href="#tentang">Tentang</a><a href="#kontak">Kontak</a></div>
+  <a class="btn btn-primary" href="https://wa.me/6287770398928?text=Halo%20Oemah%20Telur,%20saya%20ingin%20memesan%20telur%20asin." target="_blank">Pesan Sekarang</a>
+</div></nav>
+
+<main>
+<section class="hero"><div class="container hero-grid">
+<div>
+<span class="badge">🥚 TELUR ASIN PREMIUM</span>
+<h1>Gurihnya bikin <span>nagih.</span></h1>
+<p>Telur asin pilihan dengan rasa gurih, kuning telur lembut, dan kualitas yang kami jaga dari proses hingga sampai ke tangan Anda.</p>
+<a class="btn btn-primary" href="#produk">Lihat Produk →</a>
+</div>
+<div class="hero-img"><div class="egg"><div class="yolk"></div></div></div>
+</div>
+<div class="container features">
+<div class="feature"><div class="icon">✨</div><b>Bahan Pilihan</b><small>Dipilih dari telur berkualitas.</small></div>
+<div class="feature"><div class="icon">🧂</div><b>Rasa Pas</b><small>Gurih nikmat, tidak berlebihan.</small></div>
+<div class="feature"><div class="icon">📦</div><b>Siap Dikirim</b><small>Dikemas rapi dan aman.</small></div>
+</div></section>
+
+<section id="produk"><div class="container">
+<div class="section-head"><h2>Produk Favorit</h2><p>Pilih paket telur asin sesuai kebutuhanmu.</p></div>
+<div class="products">
+<article class="card"><div class="pic"><div class="mini-eggs"><i class="mini"></i><i class="mini"></i><i class="mini"></i></div></div><div class="cardbody"><h3>Paket Hemat</h3><p class="desc">Isi 6 butir — cocok untuk stok di rumah.</p><div class="price">Rp25.000</div><a class="btn order" href="https://wa.me/6287770398928?text=Halo%20Oemah%20Telur,%20saya%20mau%20pesan%20Paket%20Hemat%20isi%206." target="_blank">Pesan via WhatsApp</a></div></article>
+<article class="card"><div class="pic"><div class="mini-eggs"><i class="mini"></i><i class="mini"></i><i class="mini"></i><i class="mini"></i></div></div><div class="cardbody"><h3>Paket Keluarga</h3><p class="desc">Isi 10 butir — pas untuk dinikmati bersama.</p><div class="price">Rp40.000</div><a class="btn order" href="https://wa.me/6287770398928?text=Halo%20Oemah%20Telur,%20saya%20mau%20pesan%20Paket%20Keluarga%20isi%2010." target="_blank">Pesan via WhatsApp</a></div></article>
+<article class="card"><div class="pic"><div class="mini-eggs"><i class="mini"></i><i class="mini"></i><i class="mini"></i><i class="mini"></i><i class="mini"></i></div></div><div class="cardbody"><h3>Paket Usaha</h3><p class="desc">Isi 20 butir — pilihan untuk warung & reseller.</p><div class="price">Rp75.000</div><a class="btn order" href="https://wa.me/6287770398928?text=Halo%20Oemah%20Telur,%20saya%20mau%20pesan%20Paket%20Usaha%20isi%2020." target="_blank">Pesan via WhatsApp</a></div></article>
+</div></div></section>
+
+<section id="tentang" class="about"><div class="container about-grid">
+<div><h2>Dibuat dengan rasa, dijaga dengan kualitas.</h2><p>Oemah Telur hadir untuk membawa telur asin yang enak dan berkualitas ke meja makan Anda. Kami mengutamakan bahan yang baik, proses yang teliti, serta kemasan yang aman.</p></div>
+<div class="stats"><div class="stat"><strong>100%</strong><span>Telur pilihan</span></div><div class="stat"><strong>Fresh</strong><span>Dibuat & dikemas dengan perhatian</span></div><div class="stat"><strong>20+</strong><span>Butir dalam paket usaha</span></div><div class="stat"><strong>WA</strong><span>Order mudah & cepat</span></div></div>
+</div></section>
+
+<section id="kontak" class="contact"><div class="container"><div class="contactbox">
+<div><h2>Siap menikmati telur asin?</h2><p>Hubungi Oemah Telur untuk pemesanan dan info stok.</p></div>
+<a class="btn btn-primary" href="https://wa.me/6287770398928?text=Halo%20Oemah%20Telur,%20saya%20ingin%20tanya%20produk." target="_blank">WhatsApp: 0877-7039-8928</a>
+</div></div></section>
+</main>
+<footer>© 2026 Oemah Telur · Telur Asin Premium</footer>
+</body></html>
